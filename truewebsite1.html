@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Techienique</title>
+	<link rel="stylesheet" href="style3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+<section id="banner"> 
+	<img src ="Techienique-1.png" class="logo">
+	<div class="banner-text">
+		<h1>Techienique</h1>
+		<p>Creating Possibilities for Future Technologists</p>
+		<div class="banner-btn">
+			<a href="https://www.facebook.com/JepoyTanads"><span></span>Find Out More</a>
+		</div>
+</section>
+
+<div id="sideNav"> 
+     <nav>
+     	<ul>
+     		<li><a href="#banner">Home</a></li>
+     		<li><a href="#feature">Services</a></li>
+     		<li><a href="#aboutus">About Us</a></li>
+     		<li><a href="#contacts">Contacts</a></li>
+     	</ul>
+     </nav>
+
+</div>
+<div id="menuBtn">
+	<img src="menu.png" id="menu">
+</div>
+
+<!---SERVICES-->
+<section id="feature">
+<div class="title-text">
+<p>SERVICES</p>
+<h1>Learning Trainings</h1>
+</div>
+<div class="feature-box">
+	<div class="services">
+		<h1><a style="text-decoration:none; color: black;"href="https://www.youtube.com/watch?v=PlHnamdwGmw">Comprehensive Security Planning</h1>
+		<div class="services-desc">
+			<div class="services-icon">
+				<i class ="fa fa-shield"></i>
+			</div>
+			<div class="services-text">
+				<p> Analyze your business infrastructure. </p>
+				<p> Conduct a threat impact assessment. </p>
+				<p> Establish information security policies & procedures. </p>
+			</div>
+		</div>
+		<h1><a style="text-decoration:none; color: black;"href="https://dms.licdn.com/playlist/C560DAQE4Rtyx1KesFQ/learning-original-video-vbr-540/0/1606163176053?e=1671818400&v=beta&t=sNgaw313hztkWcl29cU9ghLGHt9xaXKXj6i5bnfXaZY#.mp4">Strategic Thinking</a></h1>
+		<div class="services-desc">
+			<div class="services-icon">
+				<i class="fa fa-comment"></i>
+			</div>
+			<div class="services-text">
+				<p> Considering the consequences of your options. </p>
+				<p> Articulating your goals clearly. </p>
+				<p> Researching and identifying options to reach those goals. </p>
+			</div>
+		</div>
+		<h1><a style="text-decoration:none; color: black;"href="https://www.youtube.com/watch?v=zOjov-2OZ0E">Introduction to Programming</a></h1>
+		<div class="services-desc">
+			<div class="services-icon">
+				<i class="fa fa-file-code-o"></i>
+			</div>
+			<div class="services-text">
+				<p> Learn the skills to build a foundational knowledge of popular programming languages. </p>
+				<p> Showcase what you've learned. </p>
+				<p> Share the skills and learning you've gained. </p>
+			</div>
+		</div>
+	</div>
+	<div class="services-img">
+		<img src="it.png">
+	</div> 
+</div>
+
+</section> 
+
+<!--ABOUT US-->
+
+<section id="aboutus">
+<div class="title-text">
+<p>ABOUT US</p>
+<h1>We Work To Be Better</h1>
+</div>
+<div class="aboutus-box">
+	<div class="single-aboutus">
+		<img src="choir.jpg">
+		<div class="overlay"></div>
+		<div class="aboutus-desc">
+		<h3>I am a part of a Choir</h3>
+		<hr>
+		</div>
+
+	</div>
+	<div class="single-aboutus">
+		<img src="ball.jpg">
+		<div class="overlay"></div>
+		<div class="aboutus-desc">
+		<h3>I play basketball</h3>
+		<hr>
+		</div>
+	</div>
+	<div class="single-aboutus">
+		<img src="3.jpg">
+		<div class="overlay"></div>
+		<div class="aboutus-desc">
+		<h3>I am a Computer Science student</h3>
+		<hr>
+		</div>
+	</div>
+	<div class="single-aboutus">
+		<img src="4.png">
+		<div class="overlay"></div>
+		<div class="aboutus-desc">
+		<h3>I am a Gamer</h3>
+		<hr>
+		</div>
+	</div>
+
+</div>
+</section>
+
+<!--CONTACTS-->
+
+<section id="contacts">
+<div class="title-text">
+<p>CONTACTS</p>
+<h1>Let Us Keep In Touch</h1>
+</div>
+	<div class="contacts-box">
+	<div class="contacts">
+		<h1>CONTACTS</h1>
+		<div class="contacts-desc">
+			<div class="contacts-icon">
+				<i class="fa fa-address-book-o"></i>
+			</div>
+			<div class="contacts-text">
+				<p> Email: thc1969@dlsud.edu.ph </p>
+				<p> Cellphone Number: +639953001174 </p>
+				<p> Address: Bulihan Silang Cavite </p>
+		</div>
+		
+<script>
+var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+sideNav.style.right = "-250px";
+
+menuBtn.onclick = function(){
+	if(sideNav.style.right == "-250px"){
+		sideNav.style.right = "0";
+		menu.src="closebtn.png"
+	}
+	else{
+		sideNav.style.right = "-250px";
+		menu.src="menu.png"
+	}
+}	
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 500,
+	speedAsDuration: true
+});
+</script>
+</body>
+</html>
